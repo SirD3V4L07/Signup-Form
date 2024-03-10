@@ -14,23 +14,62 @@ body {
 #left {
     width:40%;
     height:100%;
-    background-color: aqua;
+    background-color: rgb(250, 250, 250);
+    background-image: url("https://images.pexels.com/photos/314726/pexels-photo-314726.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#left > :first-child {
+#left > #overlay {
+    content:"";
+    width:100%;
+    height:100%;
+    background-color:rgba(1,1,1,0.4);
+}
+
+#overlay > :first-child {
     width:100%;
     height:10%;
 }
 
-#left > #banner {
+#overlay > #banner {
     width:100%;
     height:20%;
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0.863);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-#left > :last-child {
+#overlay > :last-child {
     width:100%;
     height:70%;
+}
+
+#logo {
+    width:35%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo > img {
+    max-width:100px;
+    width:100%;
+}
+
+#wordmark {
+    width:35%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgba(49, 49, 49, 0.842);
+    font-size: 1.2rem;
 }
 
 #right {
