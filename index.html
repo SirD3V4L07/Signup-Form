@@ -25,23 +25,41 @@
         <div id="form">
             <h2>Let's do this!</h2>
             <form action="" method="post">
-                <label for="first-name">First Name</label>
-                <input id="first-name" type="text">
-                <label for="last-name">Last Name</label>
-                <input id="last-name" type="text">
-                <label for="email">Email</label>
-                <input id="email" type="email">
-                <label for="phone-number">Phone Number</label>
-                <input id="phone-number" type="number">
-                <label for="password">Password</label>
-                <input id="password" type="password">
-                <label for="password-confirm">Confirm Password</label>
-                <input id="password-confirm" type="password">
+                <div class="form-group">
+                    <div class="field-group">
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" type="text">
+                    </div>
+                    <div class="field-group">
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" type="text">
+                    </div>
+                    <div class="field-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="field-group">
+                        <label for="phone-number">Phone Number</label>
+                        <input id="phone-number" type="number">
+                    </div>
+                    <div class="field-group">
+                        <label for="password">Password</label>
+                        <input id="password" type="password">
+                    </div>
+                    <div class="field-group">
+                        <label for="password-confirm">Confirm Password</label>
+                        <input id="password-confirm" type="password">
+                    </div>
+                </div>
             </form>
         </div>
         <div id="create-account">
-            <button>Create Account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
+            <div id="submit-group">
+                <button id="submit-button">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
         </div>
     </div>
 </body>
