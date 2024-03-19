@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    
+    <script src="script.js" defer></script>
     <title>Signup Form</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
         <div></div>
         <div id="form">
             <h2>Let's do this!</h2>
-            <form id="signupForm" action="https://httpbin.org/post" method="post">
+            <form id="signupForm" action="#" method="post">
                 <div class="form-group">
                     <div class="field-group">
                         <label for="first-name">First Name</label>
@@ -46,11 +46,12 @@
                     </div>
                     <div class="field-group">
                         <label for="password">Password</label>
-                        <input id="password" type="password" required minlength="7">
+                        <input id="password" name="password" type="password" required minlength="7">
                     </div>
                     <div class="field-group">
                         <label for="password-confirm">Confirm Password</label>
-                        <input id="password-confirm" type="password" required minlength="7">
+                        <input id="password-confirm" name="password-confirm" type="password" required minlength="7">
+                        <div id="message"></div>
                     </div>
                 </div>
             </form>
