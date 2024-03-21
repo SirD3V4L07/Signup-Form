@@ -5,6 +5,8 @@ document.querySelector("form").addEventListener("submit", function(event) {
     if (password != confirm_password) {
         document.getElementById("message").innerHTML = "Passwords do not match";
         document.getElementById("message").style.display = "block";
+        document.getElementById("password").style.borderColor = "red";
+        document.getElementById("password-confirm").style.borderColor = "red";
         event.preventDefault();
     }
 });

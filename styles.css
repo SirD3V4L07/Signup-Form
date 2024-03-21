@@ -6,7 +6,6 @@
 body {
     width:100vw;
     height:100vh;
-    background-color: blue;
     display: flex;
     flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,7 +15,7 @@ body {
     width:40%;
     height:100%;
     background-color: rgb(250, 250, 250);
-    background-image: url("https://images.pexels.com/photos/314726/pexels-photo-314726.jpeg");
+    background-image: url("https://st.depositphotos.com/2143989/2630/v/450/depositphotos_26301339-stock-illustration-abstract-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,7 +25,7 @@ body {
     content:"";
     width:100%;
     height:100%;
-    background-color:rgba(1,1,1,0.4);
+    background-color:rgba(255, 255, 255, 0.445);
 }
 
 #overlay > :first-child {
@@ -37,7 +36,7 @@ body {
 #overlay > #banner {
     width:100%;
     height:20%;
-    background-color: rgba(255, 255, 255, 0.945);
+    background-color: rgba(0, 0, 0, 0.678);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -50,52 +49,52 @@ body {
 }
 
 #logo {
-    width:35%;
+    width:120px;
     height:100%;
+    padding:20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #logo > img {
-    max-width:80px;
+    /*max-width:80px;*/
     width:100%;
 }
 
 #wordmark {
-    width:35%;
+    width:20%;
     height:100%;
+    padding:20px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    color:rgba(49, 49, 49, 0.719);
-    font-size: 1.2rem;
+    color:rgb(240, 240, 240);
+    font-size: 1.4rem;
 }
 
 #right {
     width:60%;
     height:100%;
-    background-color: blueviolet;
     display: flex;
     flex-direction: column;
 }
 
 #right > :first-child {
-    height:20%;
+    height:15%;
     width:100%;
     background-color: rgb(243, 243, 243);
 }
 
 #right > :last-child {
-    height:20%;
+    height:25%;
     width:100%;
     background-color: rgb(243, 243, 243);
 }
 
 #form {
     height:60%;
-    width:100%;
     background-color: rgb(255, 255, 255);
     z-index: 2;
     box-shadow: 11px 5px 8px 0px rgba(0, 0, 0, 0.295);
@@ -154,16 +153,32 @@ form * {
 
 #submit-button {
     border-radius:7px;
-    padding:10px 20px 10px 20px;
+    padding:15px 30px 15px 30px;
     margin-bottom: 15px;
-    background-color: rgb(181, 208, 233);
-    color:#4d4d4d;
+    background-color: rgb(43, 171, 230);
+    color:#f0f0f0;
     font-weight: 700;
+    font-size: 1.2rem;
     border:none;
     box-shadow: 5px 2px 8px 0px rgba(0, 0, 0, 0.295);
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: rgb(58, 181, 238);
 }
 
 #message {
     display:none;
     color:red;
+    margin-left: 10px;
+}
+
+
+input {
+    padding:2px;
+}
+
+label {
+    font-size: 1.1rem;
 }
