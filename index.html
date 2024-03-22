@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    
     <title>Signup Form</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
     <div id="right">
         <div></div>
         <div id="form">
-            <h2>Let's do this!</h2>
+            <h2 id="heading">Let's do this!</h2>
             <form id="signupForm" action="#" method="post">
                 <div class="form-group">
                     <div class="field-group">
@@ -58,10 +58,11 @@
         </div>
         <div id="create-account">
             <div id="submit-group">
-                <button type="submit" form="signupForm" id="submit-button">Create Account</button>
+                <button onclick="submitForm()" type="button" form="signupForm" id="submit-button">Create Account</button>
                 <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
     </div>
 </body>
+<script src="script.js" defer></script>
 </html>
